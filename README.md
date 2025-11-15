@@ -60,6 +60,24 @@ git checkout feature/your-branch-name
 
 ---
 
+## **Essential Tools**
+
+1. **React.js** ✅  
+   This project is built using React. You need to be familiar with basic React concepts to contribute effectively.
+
+2. **Tailwind CSS** ✅  
+   Tailwind is required for styling in this project. All final components should follow Tailwind conventions.
+
+---
+
+## **Notes for Beginners**
+
+* You **can use plain CSS** while testing your code and building components.  
+* Once your code works correctly, you **should convert the styling to Tailwind CSS** before submitting your changes.  
+* This helps maintain consistency across the project while allowing beginners to experiment freely.
+
+---
+
 # 4. Save and Upload Your Work (Commit + Push)
 
 After making your changes:
