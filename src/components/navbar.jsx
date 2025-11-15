@@ -8,6 +8,8 @@ export default function Navbar(){
 
         <h1>hello mouad</h1>
 
+        <p>hedjzehfjzhjk</p>
+
         </div>
     )
 }
