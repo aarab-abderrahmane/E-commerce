@@ -67,6 +67,9 @@ git checkout feature/your-branch-name
 
 2. **Tailwind CSS** ✅  
    Tailwind is required for styling in this project. All final components should follow Tailwind conventions.
+   
+4. **Bootstrap Icons** ✅  
+   Bootstrap Icons are used for UI elements. Make sure you know how to include them.
 
 ---
 
