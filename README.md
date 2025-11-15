@@ -129,6 +129,8 @@ Trello is used to organize tasks.
 * Always update your branch before working.
 * Use clear commit messages.
 
+
+
 ---
 
 # 9. Support
@@ -136,3 +138,68 @@ Trello is used to organize tasks.
 If you encounter any issues:
 * Add them to the Trello “Problems” section  
 * Or contact the team lead on Discord
+
+
+
+# 🛠️ Guide: How to Fix a Mistake if You Edited a File Not Related to Your Task
+
+If you accidentally added changes to files that are not part of your task, follow these steps to fix the situation without affecting the project:
+
+---
+
+## 1️⃣ Check the branch you are working on
+
+Make sure you are on **your own branch only**:
+
+```bash
+git checkout feature/your-branch
+````
+
+---
+
+## 2️⃣ Restore the original file from main
+
+Replace the modified file with the original version from main:
+
+```bash
+git checkout main -- path/to/file
+```
+
+> Example:
+
+```bash
+git checkout main -- src/components/Footer.jsx
+```
+
+---
+
+## 3️⃣ Save the changes and push
+
+```bash
+git add .
+git commit -m "fix: removed unintended changes"
+git push origin feature/your-branch
+```
+
+---
+
+## 4️⃣ Verify on GitHub
+
+* Open your Pull Request.
+* Make sure no other files were changed.
+* Now only the files related to your task remain, ready for review.
+
+---
+
+## ⚠️ Important Tips
+
+* **Never make changes directly on the main branch.**
+* All edits should be made on your own branch only.
+* Before any push, check the modified files using:
+
+```bash
+git status
+```
+
+
+
